@@ -244,4 +244,15 @@ function findMinIndex(items: number[]): number {
 //console.log(JSON.stringify(exceptZero([4, 5, 3, 1, 1])));
 //--------------------
 //--------------------
-//
+// You are given a string and two markers (the initial one and final). 
+// You have to find a substring enclosed between these two markers. 
+// But there are a few important conditions.
+function betweenMarkers(text: string, start: string, end: string): string {
+  // your code here
+  let result: string = text.substring(text.indexOf(start) + 1, text.indexOf(end));
+
+  return result;
+}
+
+//console.log("Example:");
+//console.log(betweenMarkers("[an apple]", "[", "]"));
