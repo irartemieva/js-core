@@ -18,13 +18,9 @@ function flat(arr) {
   let result = [];
   arr.forEach(el => {
     if (Array.isArray(el)) {
-      console.log('1');
       result = [...result, ...flat(el)];
-      console.log(result);
     } else {
-      console.log('2');
       result = [...result, el];
-      console.log(result);
     }
   })
 
