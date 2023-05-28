@@ -49,8 +49,8 @@ function sum(number) {
   }
 }
 
-let f = sum(1)(2)(3);
-//f();
+//let f1 = sum(1)(2)(3);
+//f1();
 //---------------------------
 //---------------------------
 
@@ -173,22 +173,22 @@ function returnValue(arr) {
 //---------------------------
 
 // IIFE - immediately invoked function expression
-(function() {
-  console.log('start');
-  for (var i = 0; i < 100; i++) {
-    ((i) => setTimeout(() => console.log(i), 1000))(i);
-  }
-  console.log('end');
-})();
+// (function() {
+//   console.log('start');
+//   for (var i = 0; i < 100; i++) {
+//     ((i) => setTimeout(() => console.log(i), 1000))(i);
+//   }
+//   console.log('end');
+// })();
  
-(function() {
-  var f = [];
-  for (var i = 0; i < 100; i++) {
-    f[i] = () => console.log(i);
-  }
-  f[9]();
-  f[8]();
-})();
+// (function() {
+//   var f = [];
+//   for (var i = 0; i < 100; i++) {
+//     f[i] = () => console.log(i);
+//   }
+//   f[9]();
+//   f[8]();
+// })();
 //---------------------------
 //---------------------------
 
