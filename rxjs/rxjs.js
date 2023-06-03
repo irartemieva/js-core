@@ -6,5 +6,5 @@ const observable = interval(100).pipe(
   map(() => Math.random())
   );
 
-observable.subscribe(x => console.log(x));
-observable.subscribe(x => console.log(x));
+observable.subscribe(x => console.log('First ', x));
+observable.subscribe(x => console.log('Second ', x));
